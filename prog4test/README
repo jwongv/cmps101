@@ -1,0 +1,30 @@
+Jacky Wong
+jagwong@ucsc.edu
+ID:1281439
+
+direc.c is the main program. It takes in a file as the first argument
+It then goes through the contents of the file
+It creates a graph of the size specified by the first integer in the file
+It then goes through the file and inserts all the vertices
+It then performs a breadth first search for each specified query and prints out directions
+The graph is then freed at the end
+
+list.h is the header file for our list ADT. It contains all the function names and parameters
+
+list.c is where our list ADT functions are filled out and given definitions
+
+listDriver.c is the driver program used to test the list ADT functions.
+It creates a list and tests the several different functions
+It prints what is happening and what the results should be
+
+graph.h is the header file for our graph ADT. It contains all the function names and parameters
+
+graph.c is where our graph ADT functions are filled out and given definitions
+
+graphDriver.c is the driver program used to test the graph ADT functions
+It creates a graph and tests the several different functions
+It prints what is happening and what the results should be
+
+The Makefile is used to easily compile our main program and driver programs
+
+The README contains the descriptions of each file.

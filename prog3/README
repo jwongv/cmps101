@@ -1,0 +1,42 @@
+//Jacky Wong
+//jagwong@ucsc.edu
+//ID:1281439
+
+
+
+
+bookrec.c is the main program. It takes in a file as the first argument.
+It then goes through the contents of the file
+It amkes an array of size #ofcustomers+1 and creates a list for each one
+It then goes through the rest of the file adding bookIDs to the lists
+The customer ID is the array index
+A hash is also created to store all the books purchased
+Each hash slot has a list of books that were hashed to that slot
+Each node in those lists contain the bookID and a list of books its been copurchased with
+Each node in that list contains the bookID and the count of copurchases with it
+The program then prints recommendations for the highest copurchase if the customer requested it.
+
+list.c is the source file for our book count list
+It is the ADT for my list that keeps track of a count variable
+
+List.h is the header file for our book count list.
+
+List.c and list.h were copied over from program 1.
+
+List.DR is our driver program for our list ADT. It tests the list functions
+
+booklist.c is the source file for our book list. This list is put into our hash table
+
+booklist.h is the header file for our book list
+
+booklistDriver.c is the driver program for our booklist ADT. It tests the booklist functions
+
+hash.c is the source file for our hash ADT.
+
+hash.h is the header file for hash.c
+
+hashDriver is the driver program for our hash ADT. It tests the hash functions
+
+The Makefile is used to easily compile our main program and driver programs
+
+The README contains descriptions of each file

@@ -1,0 +1,30 @@
+//Jacky Wong
+//jagwong@ucsc.edu
+//ID:1281439
+
+store.c is the main program. It takes in a file as the first argument. 
+It then goes through the contents of the file.
+It makes an array of size #ofcustomers+1 and creates a list for each one.
+It then goes through the rest of the file adding bookIDs to the lists.
+The customer ID is the array index. 
+It then prints the formatted list of the customers and their book purchases in sorted order.
+The lists are then emptied and freed.
+
+
+list.h is the header file for our list ADT. It contains all of the function names for our ADT.
+It is how our main program accesses the ADT.
+
+
+list.c is where our list ADT functions are filled out and given definitions.
+This is where the list ADT actions occur.
+
+
+List.DR.c is the driver program used to test the list ADT functions.
+It prints everything that should happen and then prints what actually does happen.
+It is used to confirm that the functions are working properly.
+
+
+The Makefile is used to easily compile our main program and driver program
+
+
+The README contains descriptions of each file

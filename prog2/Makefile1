@@ -1,0 +1,28 @@
+MKFILE		= Makefile
+
+GCC		= gcc -g -O0 -Wall -Wextra -std=gnu99
+
+CHEADER		= insertionSort.h heap.h heapSort.h
+CSOURCE1	= sortPrint.c insertionSort.c heap.c heapSort.c
+CSOURCE2	= heapDriver.c heap.c heapSort.c
+CSOURCE3	= sortComp.c insertionSort.c heap.c heapSort.c
+OBJECTS1	= ${CSOURCE1:.c=.o}
+OBJECTS2	= ${CSOURCE2:.c=.o}
+OBJECTS3	= ${CSOURCE3:.c=.o}
+EXECBIN1	= sortPrint
+EXECBIN2	= heapDriver
+EXECBIN3	= sortComp
+
+all : ${EXECBIN} ${EXECBIN2} ${EXECBIN3}
+
+${EXECBIN1} : ${OBJECTS1}
+	${GCC} -o $@ ${OBJECTS1}
+
+${EXECBIN2} : ${OBJECTS2}
+	${GCC} -o $@ ${OBJECTS2}
+
+${EXECBIN3} : ${OBJECTS3}
+	${GCC} -o $@ ${OBJECTS3}
+
+%.o : %.c
+	${GCC} -c $<

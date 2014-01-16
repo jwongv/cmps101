@@ -1,0 +1,51 @@
+Jacky Wong
+jagwong@ucsc.edu
+ID:1281439
+
+sortPrint.c is one of the main programs. It takes in a file as the first argument.
+It then goes through the contents of the file.
+It creates two arrays of the size of the first integer in the file.
+It then goes through the rest of the file and inserts the integers into both arrays.
+The arrays are then sorted using insertion sort for one and heap sort for the other.
+It then prints both the sorted arrays and checks if they are actually sorted.
+The heap used by heapsort is freed.
+
+sortComp.c is the other main program. It takes ina  file as the first argument.
+Like sortPrint.c, sortComp goes through the contents of the file,
+and creates 2 appropriately sized arrays based on the input file. However, instead of printing,
+the time it takes to sort is measured using clock() from time.h
+Both sorts are measured and their respective times are printed.
+
+heap.h is the header file for our heap ADT. It contains all the function names for our ADT.
+This is how our main program accesses the ADT.
+
+heap.c is where our heap ADT functions are filled out and given definitions.
+This is where the heap ADT actions occur.
+
+heapDriver.c is the driver program used to test the heap ADT functions.
+It creates a heap using several insert commands. It prints everything being tested and prints
+what SHOULD happen if things go right, and then prints what ACTUALLY does happen.
+It is used to confirm that the ADT and functions are working properly.
+
+insertionSort.h is the header file for our insertion sort ADT. It contains just the
+insertion sort function name.
+
+insertionSort.c is where our insertionSort function is filled and defined.
+
+heapSort.h is the header file for our heap sort ADT. It contains just the heap sort
+function name.
+
+heapSort.c is where our heapSort function is filled and defined.
+
+The Makefile is used to easily compile our main programs and driver program.
+
+The README contains the descriptions of each file.
+
+
+**** OBSERVATION FROM SORTCOMP ****
+
+From the results of sortComp, heap sort tends to run much faster than insertion sort.
+The only time I ever got times over 0 seconds for either sorting was when I ran sortComp
+on a file with 10000 integers. Insertion sort averaged at 0.1 seconds whereas heap sort
+averaged at 0.01 seconds. This makes sense because heap sort is supposed to run at
+O(nlogn) speeds which is faster than insertion sorts O(n^2) speed.

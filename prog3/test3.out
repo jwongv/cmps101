@@ -1,0 +1,12 @@
+Customers buying book 3423 have unlimited choice
+Customers buying book 3423 also purchased 112233
+Customers buying book 429496933943 also purchased 112233
+Customer 	 Books
+1    3423      112233   
+2    34567      4294967339   
+3    33      112233      3423   
+4    3423      112233      429496933943   
+5 
+6    3423      112233   
+7    54      34567      42949693394      39993   
+8    1012      3423      429496933943
